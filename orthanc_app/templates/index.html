@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orthanc Failed Jobs</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .btn {
+            padding: 10px;
+            background: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Failed Jobs</h2>
+    <button class="btn" onclick="fetchFailedJobs()">Fetch Failed Jobs</button>
+    <button class="btn" onclick="retryFailedJobs()">Retry Failed Jobs</button>
+
+    <table id="jobs-table">
+        <thead>
+            <tr>
+                <th>Job ID</th>
+                <th>DICOM ID</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script>
+        function fetchFailedJobs() {
+            fetch('/fetch-failed-jobs/')
+                .then(response => response.json())
+                .then(data => {
+                    let tableBody = document.querySelector("#jobs-table tbody");
+                    tableBody.innerHTML = ""; // Clear previous rows
+    
+                    if (data.failed_jobs.length === 0) {
+                        alert("No failed jobs found!");
+                    } else {
+                        data.failed_jobs.forEach(job => {
+                            let row = `<tr>
+                                <td>${job.ID}</td>
+                                <td>${job.DicomInstance}</td>
+                                <td>${job.Status}</td>
+                            </tr>`;
+                            tableBody.innerHTML += row;
+                        });
+                    }
+                })
+                .catch(error => alert("Error fetching failed jobs: " + error));
+        }
+    
+        function retryFailedJobs() {
+            fetch('/retry-failed-jobs/')
+                .then(response => response.json())
+                .then(data => {
+                    alert(data.message);
+                    fetchFailedJobs(); // Refresh table after retry
+                })
+                .catch(error => alert("Error retrying failed jobs: " + error));
+        }
+    </script>
+
+</body>
+</html>

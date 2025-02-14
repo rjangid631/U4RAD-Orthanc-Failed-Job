@@ -1,0 +1,198 @@
+2025-02-14 17:29:55,288 - WARNING - Not Found: /fetch-failed-jobs/
+2025-02-14 17:31:34,855 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\urls.py changed, reloading.
+2025-02-14 17:32:13,834 - ERROR - Internal Server Error: /retry-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in retry_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:32:13,832 - ERROR - Internal Server Error: /fetch-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in fetch_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:32:15,027 - ERROR - Internal Server Error: /fetch-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in fetch_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:32:16,369 - ERROR - Internal Server Error: /fetch-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in fetch_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 24, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:33:36,846 - ERROR - Internal Server Error: /retry-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in retry_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:33:38,176 - ERROR - Internal Server Error: /retry-failed-jobs/
+Traceback (most recent call last):
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\myvenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in retry_failed_jobs
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py", line 40, in <listcomp>
+    failed_jobs = [job for job in jobs if job.get("Status") == "Failed"]
+                                          ^^^^^^^
+AttributeError: 'str' object has no attribute 'get'
+2025-02-14 17:37:52,548 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 17:40:24,024 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 17:48:23,931 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 17:50:30,169 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 18:16:21,335 - INFO - Total failed jobs found: 0
+2025-02-14 18:16:21,372 - ERROR - Error fetching failed jobs: jobs.html
+2025-02-14 18:16:21,373 - ERROR - Internal Server Error: /
+2025-02-14 18:17:02,103 - INFO - Total failed jobs found: 0
+2025-02-14 18:17:02,104 - ERROR - Error fetching failed jobs: jobs.html
+2025-02-14 18:17:02,104 - ERROR - Internal Server Error: /
+2025-02-14 18:17:53,159 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 18:18:40,922 - INFO - Total failed jobs found: 0
+2025-02-14 18:19:08,406 - INFO - Total failed jobs found: 0
+2025-02-14 18:20:37,114 - INFO - Total failed jobs found: 0
+2025-02-14 18:21:17,811 - WARNING - Not Found: /retry-job/
+2025-02-14 18:21:34,795 - INFO - Total failed jobs found: 0
+2025-02-14 18:22:19,482 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\urls.py changed, reloading.
+2025-02-14 18:34:37,797 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:34:38,829 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: Status = None
+2025-02-14 18:34:39,844 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: Status = None
+2025-02-14 18:34:40,860 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: Status = None
+2025-02-14 18:34:41,876 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: Status = None
+2025-02-14 18:34:42,891 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: Status = None
+2025-02-14 18:34:43,922 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: Status = None
+2025-02-14 18:34:44,938 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: Status = None
+2025-02-14 18:34:45,954 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: Status = None
+2025-02-14 18:34:45,954 - INFO - Total failed jobs found: 0
+2025-02-14 18:39:22,763 - INFO - C:\Users\SABYASACHI GHOSH\Desktop\orthanc_project\orthanc_project\orthanc_app\views.py changed, reloading.
+2025-02-14 18:39:35,396 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:39:36,410 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: Status = None
+2025-02-14 18:39:37,426 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: Status = None
+2025-02-14 18:39:38,457 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: Status = None
+2025-02-14 18:39:39,488 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: Status = None
+2025-02-14 18:39:40,520 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: Status = None
+2025-02-14 18:39:41,535 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: Status = None
+2025-02-14 18:39:42,567 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: Status = None
+2025-02-14 18:39:43,582 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: Status = None
+2025-02-14 18:39:43,582 - INFO - Total failed jobs found: 0
+2025-02-14 18:45:06,649 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:45:07,665 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:45:08,681 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:45:09,712 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:45:10,743 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:45:11,759 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:45:12,774 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:45:13,806 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:45:14,821 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:45:14,821 - INFO - Total failed jobs found: 2
+2025-02-14 18:45:43,333 - INFO - Fetched 8 job IDs from Orthanc for retry.
+2025-02-14 18:45:44,349 - INFO - Checking job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:45:44,349 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5 failed. Retrying DICOM ID: be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:45:55,880 - INFO - Successfully retried job 0f812322-32a9-4e3d-973c-ff6a42b760c5 for DICOM be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:45:56,911 - INFO - Checking job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:45:56,911 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4 failed. Retrying DICOM ID: be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:46:07,255 - INFO - Successfully retried job 40c92384-6902-4acc-a1c4-1ba4f693c7d4 for DICOM be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:46:08,271 - INFO - Checking job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:46:09,286 - INFO - Checking job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:46:10,302 - INFO - Checking job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:46:11,333 - INFO - Checking job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:46:12,364 - INFO - Checking job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:46:13,380 - INFO - Checking job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:46:13,380 - INFO - Total retried jobs: 2
+2025-02-14 18:46:17,631 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:46:18,641 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:46:19,665 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:46:20,680 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:46:21,696 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:46:22,899 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:46:23,946 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:46:24,961 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:46:25,977 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:46:25,977 - INFO - Total failed jobs found: 2
+2025-02-14 18:47:34,439 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:47:35,455 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:47:36,470 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:47:37,501 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:47:38,533 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:47:39,548 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:47:40,580 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:47:41,611 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:47:42,627 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:47:42,627 - INFO - Total failed jobs found: 2
+2025-02-14 18:47:51,992 - INFO - Fetched 8 job IDs from Orthanc for retry.
+2025-02-14 18:47:53,007 - INFO - Checking job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:47:53,007 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5 failed. Retrying DICOM ID: be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:48:02,804 - INFO - Successfully retried job 0f812322-32a9-4e3d-973c-ff6a42b760c5 for DICOM be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:48:03,820 - INFO - Checking job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:48:03,820 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4 failed. Retrying DICOM ID: be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:48:12,945 - INFO - Successfully retried job 40c92384-6902-4acc-a1c4-1ba4f693c7d4 for DICOM be8fbf03-34eff013-2c5f6d30-8a193041-d91a499a
+2025-02-14 18:48:13,967 - INFO - Checking job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:48:14,973 - INFO - Checking job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:48:15,998 - INFO - Checking job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:48:17,011 - INFO - Checking job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:48:18,037 - INFO - Checking job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:48:19,046 - INFO - Checking job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:48:19,046 - INFO - Total retried jobs: 2
+2025-02-14 18:48:33,624 - INFO - Fetched 8 job IDs from Orthanc.
+2025-02-14 18:48:34,655 - INFO - Job 0f812322-32a9-4e3d-973c-ff6a42b760c5: State = Failure
+2025-02-14 18:48:35,687 - INFO - Job 40c92384-6902-4acc-a1c4-1ba4f693c7d4: State = Failure
+2025-02-14 18:48:36,702 - INFO - Job aa0bb173-01e6-467d-b7a4-4f0a4070571f: State = Success
+2025-02-14 18:48:37,733 - INFO - Job aa89c072-4a1c-42cf-bbff-a21d9062e3fd: State = Success
+2025-02-14 18:48:38,749 - INFO - Job c982f4eb-45f8-474e-8ea9-745434e1fb00: State = Success
+2025-02-14 18:48:39,765 - INFO - Job d11b00d9-0467-44c2-b788-c55fc5e78237: State = Success
+2025-02-14 18:48:40,780 - INFO - Job f5bb9596-c7ca-4fc6-b8c8-6a966d51d922: State = Success
+2025-02-14 18:48:41,812 - INFO - Job f8c610da-e5b5-4764-8d19-ee783a013a83: State = Success
+2025-02-14 18:48:41,812 - INFO - Total failed jobs found: 2
