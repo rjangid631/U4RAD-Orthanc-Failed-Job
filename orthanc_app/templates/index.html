@@ -10,22 +10,63 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
+            background-color: #f4f4f9;
         }
+        
+        h2 {
+            color: #333;
+        }
+        
+        .btn {
+            padding: 12px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
         table {
             width: 80%;
             margin: 20px auto;
             border-collapse: collapse;
+            background: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
         }
+        
         th, td {
-            border: 1px solid black;
-            padding: 10px;
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
         }
-        .btn {
-            padding: 10px;
-            background: blue;
+        
+        th {
+            background: #007bff;
             color: white;
-            border: none;
-            cursor: pointer;
+        }
+        
+        tr:nth-child(even) {
+            background: #f2f2f2;
+        }
+        
+        tr:hover {
+            background: #ddd;
+        }
+        
+        #loading {
+            display: none;
+            font-size: 18px;
+            color: #007bff;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -34,6 +75,7 @@
     <h2>Failed Jobs</h2>
     <button class="btn" onclick="fetchFailedJobs()">Fetch Failed Jobs</button>
     <button class="btn" onclick="retryFailedJobs()">Retry Failed Jobs</button>
+    <p id="loading">Loading...</p>
 
     <table id="jobs-table">
         <thead>
@@ -48,11 +90,13 @@
 
     <script>
         function fetchFailedJobs() {
+            document.getElementById("loading").style.display = "block";
             fetch('/fetch-failed-jobs/')
                 .then(response => response.json())
                 .then(data => {
                     let tableBody = document.querySelector("#jobs-table tbody");
                     tableBody.innerHTML = ""; // Clear previous rows
+                    document.getElementById("loading").style.display = "none";
     
                     if (data.failed_jobs.length === 0) {
                         alert("No failed jobs found!");
@@ -67,17 +111,25 @@
                         });
                     }
                 })
-                .catch(error => alert("Error fetching failed jobs: " + error));
+                .catch(error => {
+                    document.getElementById("loading").style.display = "none";
+                    alert("Error fetching failed jobs: " + error);
+                });
         }
     
         function retryFailedJobs() {
+            document.getElementById("loading").style.display = "block";
             fetch('/retry-failed-jobs/')
                 .then(response => response.json())
                 .then(data => {
                     alert(data.message);
+                    document.getElementById("loading").style.display = "none";
                     fetchFailedJobs(); // Refresh table after retry
                 })
-                .catch(error => alert("Error retrying failed jobs: " + error));
+                .catch(error => {
+                    document.getElementById("loading").style.display = "none";
+                    alert("Error retrying failed jobs: " + error);
+                });
         }
     </script>
 
